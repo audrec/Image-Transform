@@ -31,7 +31,7 @@ orange, purple, etc.
 There are two main hues :
 * "Illini Orange" has a hue of 11.
 * "Illini Blue" has a hue of 216.
-![Hue](https://github.com/audrec/Image-Transform/ImageTransform/images/Hue.png)
+![Hue](https://github.com/audrec/Image-Transform/blob/master/ImageTransform/images/Hue.png)
 
 ## Saturation
 Saturation (denoted as s) indicates the degree to which the hue differs from a neutral gray. The values run from

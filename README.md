@@ -31,22 +31,22 @@ orange, purple, etc.
 There are two main hues :
 * "Illini Orange" has a hue of 11.
 * "Illini Blue" has a hue of 216.
-![Hue](https://github.com/audrec/Image-Transform/blob/master/ImageTransform/images/Hue.png)
+![Hue](https://github.com/audrec/Image-Transform/blob/main/ImageTransform/images/Hue.png)
 
 ## Saturation
 Saturation (denoted as s) indicates the degree to which the hue differs from a neutral gray. The values run from
 0%, which is no color saturation, to 100%, which is the fullest saturation of a given hue at a given percentage of
 illumination.
 
-![Saturation](https://github.com/audrec/Image-Transform/images/staruation.png)
+![Saturation](https://github.com/audrec/Image-Transform/blob/main/ImageTransform/images/staruation.png)
 
 ## Luminance
 Luminance (denoted as l) indicates the level of illumination. The values run as percentages; 0% appears black
 (no light) while 100% is full illumination, which washes out the color (it appears white).
 
-![Luminance](https://github.com/audrec/Image-Transform/ImageTransform/ImageTransform/images/Luminance.png)
+![Luminance](https://github.com/audrec/Image-Transform/blob/main/ImageTransform/images/Luminance.png)
 
-![Overall](https://github.com/audrec/Image-Transform/ImageTransform/ImageTransform/images/HSL_color_space.png)
+![HSL_color_space](https://github.com/audrec/Image-Transform/blob/main/ImageTransform/images/HSL_color_space.png)
 
 ## HSL Color Space
 The full HSL color space is a three-dimensional space, but it is not a cube (nor exactly cylindrical). The area
@@ -83,7 +83,7 @@ the test suite and make sure you are doing Parts 1 and 2 correctly with unit tes
 by typing **./test** in the same directory. We use the widely-used C++ testing framework Catch. You are always
 encouraged to write additional test cases; the executable Catch generates will run all of your tests and show you
 a report.
-![test](https://github.com/audrec/Image-Transform/ImageTransform/ImageTransform/images/test1.png)
+![test1](https://github.com/audrec/Image-Transform/blob/main/ImageTransform/images/test1.png)
 
 ## Part 2: Using uiuc::PNG
 Now that we have an**HSLAPixel** , it's time to manipulate some images! First, let's understand the PNG class that
@@ -129,7 +129,7 @@ To illinify an image is to transform the hue of every pixel to Illini Orange (11
 every pixel should be set to one or the other of these two hue values, based on whether the pixel's original hue
 value is closer to Illini Orange or Illini Blue. Remember, hue values are arranged in a logical circle! If you keep
 increasing the hue value, for example, what should eventually happen?
-![illinify](https://github.com/audrec/Image-Transform/ImageTransform/ImageTransform/images/illinify.png)
+![illinify](https://github.com/audrec/Image-Transform/blob/main/ImageTransform/images/illinify.png)
 
 ## Function #2: spotlight
 To spotlight an image is to create a spotlight pattern centered at a given point ( centerX , centerY ).
@@ -139,7 +139,7 @@ luminance at most.
 For example, a pixel 3 pixels above and 4 pixels to the right of the center is a total of sqrt(3*3 + 4*4)
 = sqrt(25) = 5 pixels away and its luminance is decreased by 2.5% (0.975 its original value). At a distance
 over 160 pixels away, the luminance will always be decreased by 80% (0.2x its original value).
-![spotlight](https://github.com/audrec/Image-Transform/ImageTransform/ImageTransform/images/spotlight.png)
+![spotlight](https://github.com/audrec/Image-Transform/blob/main/ImageTransform/images/spotlight.png)
 
 ## Function #3: watermark
 To watermark an image is to lighten a region
@@ -155,4 +155,4 @@ coordinates.
 For every pixel that exists within the bounds
 of both base image and stencil, the luminance of the base image should be increased by +0.2 (absolute, but not
 to exceed 1.0) if and only if the luminance of the stencil at the same pixel position is at maximum (1.0).
-![watermark](https://github.com/audrec/Image-Transform/ImageTransform/ImageTransform/images/watermark.png)
+![watermark](https://github.com/audrec/Image-Transform/blob/main/ImageTransform/images/watermark.png)

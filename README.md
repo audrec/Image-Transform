@@ -8,7 +8,7 @@ Download the repo and open the AWS Cloud9 IDE / terminal and type the following 
  git clone https://github.com/audrec/Image-Transform.git
 ```
 
-## Prerequests
+## Prerequisite
 Firstly, make sure you've updated the compiler by typing the following command in the terminal:
 ``` 
 sudo yum install -y gcc72 gcc72-c++
@@ -31,7 +31,7 @@ orange, purple, etc.
 There are two main hues :
 * "Illini Orange" has a hue of 11.
 * "Illini Blue" has a hue of 216.
-![Hue](https://github.com/audrec/Image-Transform/blob/ImageTransform/images/Hue.png?raw=true)
+![Hue](https://github.com/audrec/Image-Transform/blob/master/ImageTransform/images/Hue.png)
 
 ## Saturation
 Saturation (denoted as s) indicates the degree to which the hue differs from a neutral gray. The values run from
